@@ -6,11 +6,7 @@
 
 generator client {
   provider        = "prisma-client-js"
-  binaryTargets = ["native", "rhel-openssl-3.0.x", "debian-openssl-3.0.x"]
-  output          = "../generated/prisma"
-  engineType      = "wasm"
 }
-
 
 datasource db {
   provider = "postgresql"
@@ -24,6 +20,5 @@ model Demo {
   acres     Float?
   longitude Float?
   latitude  Float?
-  city      String    @default("mangalore")
-  
+  city      String    @default("mangalore") 
 }
