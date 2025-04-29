@@ -1,7 +1,7 @@
 "use server"
-import { Prisma } from "@/generated/prisma";
-import { db } from ".";
 
+import { Prisma } from "@prisma/client";
+import { db } from ".";
 
 export async function createData(data:Prisma.DemoCreateInput) {
     try{
